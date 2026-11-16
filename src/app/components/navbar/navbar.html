@@ -1,0 +1,8 @@
+<nav class="flex flex-wrap justify-center gap-2 border-b bg-background p-3">
+  @for (link of links; track link.label) {
+    <a z-button zType="ghost" [routerLink]="link.path"
+       [routerLinkActive]="link.highlight ? '!bg-blue-600 !text-white' : ''" [routerLinkActiveOptions]="{ exact: true }">
+      {{ link.label }}
+    </a>
+  }
+</nav>

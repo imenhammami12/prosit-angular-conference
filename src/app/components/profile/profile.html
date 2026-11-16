@@ -1,0 +1,12 @@
+<z-card id="profil" class="flex-row items-center gap-0 ps-6 border-l-4 border-l-blue-600">
+  <div class="flex size-16 shrink-0 items-center justify-center rounded-full bg-blue-50 text-indigo-800 dark:bg-blue-950 dark:text-indigo-300" aria-hidden="true">
+    <ng-icon name="lucideUser" size="28" class="[&_svg]:fill-current" />
+  </div>
+  <div class="min-w-0 flex-1 space-y-4">
+    <z-card-header><z-card-title class="text-xl font-semibold text-blue-900 dark:text-blue-300" zTitle="Profil utilisateur" /></z-card-header>
+    <z-card-content class="space-y-1">
+      <p><strong>Nom :</strong> {{ user.name }}</p>
+      <p><strong>Email :</strong> {{ user.email }}</p>
+    </z-card-content>
+  </div>
+</z-card>
