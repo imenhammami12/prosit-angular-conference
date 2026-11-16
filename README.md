@@ -1,59 +1,29 @@
-# Conferencia
+# Conference App : Prosit 1 (Angular 21)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.29.
+Application de gestion des conférences avec Angular 21.
 
-## Development server
+**Étape actuelle : 1. Structuration de la page d'accueil**
 
-To start a local development server, run:
+La page d'accueil est découpée en composants indépendants :
 
-```bash
-ng serve
-```
+- `Header` : titre de l'application
+- `Navbar` : menu de navigation
+- `Profile` : profil utilisateur
+- `Friends` : liste des amis
+- `Notifications` : zone de notifications
+- `Footer` : pied de page
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Lancer le projet
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Prérequis : Node.js 20 ou plus.
 
 ```bash
-ng generate --help
+npm install
+npm start
 ```
 
-## Building
+Ouvrir http://localhost:4200
 
-To build the project run:
+## Auteur
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+imen hammami : 4DAS, 2026-2027
