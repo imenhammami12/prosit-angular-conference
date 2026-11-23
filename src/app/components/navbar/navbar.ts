@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { ZardButtonComponent } from '@/shared/components/button';
+import { ConferenceList } from '../Conference-list/conference-list';
 
 @Component({
   selector: 'app-navbar',
