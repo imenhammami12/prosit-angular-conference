@@ -1,23 +1,16 @@
-<z-card id="amis" class="flex-row items-center gap-0 ps-6 border-l-4 border-l-green-600">
-  <div class="flex size-16 shrink-0 items-center justify-center rounded-full bg-green-50 text-indigo-800 dark:bg-green-950 dark:text-indigo-300" aria-hidden="true">
-    <ng-icon name="lucideUsers" size="28" class="[&_svg]:fill-current" />
+<section class="card" id="amis">
+  <div class="icon">👥</div>
+  <div>
+    <h2>Liste des amis</h2>
+
+    @for (item of FriendsList; track item.name) {
+      <input type="text" [(ngModel)]="item.name">
+    }
+
+    <ul>
+      @for (item of FriendsList; track item.name) {
+        <li>{{ item.name }}</li>
+      }
+    </ul>
   </div>
-  <div class="min-w-0 flex-1 space-y-4">
-    <z-card-header>
-      <z-card-title class="text-xl font-semibold text-blue-900 dark:text-blue-300" zTitle="Liste des amis" />
-      <z-card-description zDescription="Two-way binding : modifiez un nom, la liste se met à jour." />
-    </z-card-header>
-    <z-card-content class="space-y-3">
-      <div class="grid gap-2 sm:grid-cols-3">
-        @for (friend of friends; track $index) {
-          <input z-input [(ngModel)]="friend.name" [attr.aria-label]="'Ami ' + ($index + 1)" />
-        }
-      </div>
-      <ul class="list-disc ps-6">
-        @for (friend of friends; track $index) {
-          <li>{{ friend.name }}</li>
-        }
-      </ul>
-    </z-card-content>
-  </div>
-</z-card>
+</section>

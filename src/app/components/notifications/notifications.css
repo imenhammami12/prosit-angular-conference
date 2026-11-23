@@ -1,0 +1,76 @@
+
+.card {
+  background: white;
+  border-left: 5px solid #f5a623;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff3dc;
+  font-size: 28px;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+h2 {
+  margin: 0 0 8px;
+  color: #173b67;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.notification-content p {
+  margin: 0 0 12px;
+}
+
+/* Bouton personnalisé */
+.notification-btn {
+  display: inline-block;
+  background: #173b67;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.notification-btn:hover {
+  background: #24578c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(23, 59, 103, 0.2);
+}
+
+.notification-btn:focus-visible {
+  outline: 3px solid #f5a623;
+  outline-offset: 3px;
+}
+
+.notification {
+  margin-top: 12px !important;
+  padding: 12px;
+  background: #f7f9fc;
+  border-left: 3px solid #f5a623;
+  border-radius: 6px;
+  color: #333;
+}
